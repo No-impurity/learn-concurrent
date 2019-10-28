@@ -14,6 +14,8 @@ package com.guo.ch2;
 
 import com.guo.util.stf.*;
 
+import java.util.concurrent.locks.ReentrantLock;
+
 /**
  * 再现JIT指令重排序的Demo
  *
@@ -55,6 +57,7 @@ public class JITReorderingDemo {
       sum = observedHelper.payloadA + observedHelper.payloadB
           + observedHelper.payloadC + observedHelper.payloadD;
     }
+
 
     return sum;
   }
